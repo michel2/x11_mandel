@@ -1,8 +1,9 @@
 P=mandel
 OBJECTS=mandel.o
-CXXFLAGS = -O3 -g -Wall -Wextra -I/usr/X11R6/include -I/usr/X11R6/include/X11 
-LDLIBS=-L/usr/X11R6/lib -lX11
-CC=g++
+CFLAGS = -O3 -g -Wall -Wextra -I/usr/X11R6/include -I/usr/X11R6/include/X11
+LDLIBS=-L/usr/X11R6/lib -lX11 
+CC=c99
 $(P):$(OBJECTS)
 clean:
 	rm $(OBJECTS) $(P)
+	
